@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>Mustang Bronco GUI</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/webappicon.png" type="image/x-icon" <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body class="container">
+    <header class="logo">
+        <a href="https://www.ford.com/finance" target="_blank">
+            <img class="logo" src="images/logo.png" alt="ford.com">
+        </a>
+
+        <h1>Mustang Bronco GUI</h1>
+    </header>
+    <input type="number" placeholder="Enter a number" min="0" name="text" id="inputVal" required><br>
+    <div class="buttons">
+        <button id="button" onclick="pushData();">Enter</button>
+        <button onclick="clearTable(); alert('Table Cleared.')">Clear Table</button>
+    </div><br>
+    <div id="table-wrapper">
+        <div id="table-scroll">
+            <table id="table">
+                <tr>
+                    <th>Input Integer</th>
+                    <th>Displayed String</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>
